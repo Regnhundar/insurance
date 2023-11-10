@@ -140,7 +140,7 @@ nav a {
 }
 
 #mainSection {
-    background: linear-gradient(0deg, rgba(250, 177, 49, 1) 40%, rgba(169, 161, 158, 1) 40%);
+    background: linear-gradient(0deg, rgba(250, 177, 49, 1) 60%, rgba(169, 161, 158, 1) 60%);
     display: flex;
     flex-direction: column;
 }
@@ -191,7 +191,7 @@ main #aboutUs {
 
 main #aboutUs h2 {
     color: white;
-    margin: 4rem;
+    margin: 14rem 4rem 4rem 4rem;
     font-size: 3rem;
 }
 
