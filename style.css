@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;800;900&family=Frank+Ruhl+Libre:wght@400;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fira Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #ebebeb;
+}
+
+.wrapper {
+    margin: 0 10vw;
+    max-width: 1134px;
+}
+
+header {
+    width: 100%;
+    height: 75vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+
+
+
+.leftHero {
+    display: flex;
+    background-color: #c7ddea;
+    background-image: url("/assets/family.png");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 95% 100%;
+    grid-area: auto / auto / span 4 / span 2;
+    /* Rad start / colum start / täck 4 rader / täck 2 kolumner */
+}
+
+.leftHeroWrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-self: center;
+    height: 65vh;
+    padding: 3rem 5rem 5rem 5rem;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Frank Ruhl Libre', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    font-size: 3.75rem;
+    line-height: 80%;
+    font-weight: 700;
+}
+
+.leftHeroWrapper p {
+    margin-top: 1rem;
+    width: 19rem;
+    line-height: 150%;
+}
+
+.leftHeroWrapper p span {
+    color: white;
+}
+
+.leftHeroWrapper button {
+    margin-top: auto;
+    box-shadow: 0 0 2rem #b3c7d3;
+}
+
+button {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    border: none;
+    font-weight: bold;
+    color: #333333;
+    background-color: #ffffff;
+
+}
+
+button:hover {
+    transform: scale(1.02);
+
+}
+
+button:active {
+    transform: scale(.97)
+}
+
+.topRightHero,
+.bottomRightHero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.topRightHero {
+    background-color: #f17949;
+    grid-area: auto / auto / span 2 / span 2;
+}
+
+.bottomRightHero {
+    background-color: #fab131;
+    grid-area: auto / auto / span 2 / span 2;
+}
+
+.topRightHero h2,
+.bottomRightHero h2 {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.topRightHero p,
+.bottomRightHero p {
+    font-size: .75rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+    font-size: 0.875rem;
+}
+
+#mainSection {
+    background: linear-gradient(0deg, rgba(250, 177, 49, 1) 40%, rgba(169, 161, 158, 1) 40%);
+    display: flex;
+    flex-direction: column;
+}
+
+main #personalTxtArticle {
+    padding: 6rem 0 5rem 0;
+    display: flex;
+    justify-content: space-around
+}
+
+main #personalTxtArticle h2 {
+    color: white;
+    width: 21rem;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
+main #personalTxtArticle p {
+    width: 21rem;
+    line-height: 180%;
+    color: #43403f;
+    font-weight: bold;
+}
+
+main #personalTxtArticle button {
+    box-shadow: 0 0 2rem #98918e;
+}
+
+main #peopleCardSection {
+    display: flex;
+}
+
+main #peopleCardSection img {
+    height: 10vh;
+
+}
+
+
+main #aboutUs {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    width: 50vw;
+    line-height: 150%;
+    margin-bottom: 10rem;
+}
+
+main #aboutUs h2 {
+    color: white;
+    margin: 4rem;
+    font-size: 3rem;
+}
+
+main #aboutUs p {
+    margin: .7rem;
+    width: 33rem;
+    text-align: center;
+    font-weight: 500;
+    color: #644613;
+}
+
+
+
+main #textCubeGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+main #textCubeGrid .textCube {
+    width: 378px;
+    height: 378px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1px 1fr;
+    padding: 1rem;
+
+}
+
+main #textCubeGrid .textCube h2 {
+    color: #272c2e;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 90%;
+}
+
+main #textCubeGrid .textCube p {
+    color: #4d4d4d;
+    font-weight: 500;
+    font-size: 1.2rem;
+    align-self: center;
+    justify-self: center;
+}
+
+main #textCubeGrid .textCube h3 {
+    color: #999999;
+    font-size: 2.4rem;
+    font-weight: 900;
+    margin-right: auto;
+}
+
+main #textCubeGrid .cubeHow {
+    background-color: #c7ddea;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main #textCubeGrid .cubeOne {
+    background-color: #fff;
+}
+
+main #textCubeGrid .cubeThree {
+    background-color: #fff;
+}
+
+main #textCubeGrid .cubeFour {
+    background-color: #ec7748;
+}
+
+main #textCubeGrid .cubeFour h3 {
+    color: #854328;
+}
+
+main #textCubeGrid .cubeFour p {
+    color: #482416;
+}
+
+
+main #textCubeGrid .cubeFive {
+    background-color: #fff;
+}
+
+footer {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    background-color: #777574;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    line-height: 30%;
+    padding-top: 1.5rem;
+    background-color: #a9a19e;
+    font-size: 2rem;
+    color: #33302f;
+
+}
+
+footer nav a {
+    font-size: 1.2rem;
+    color: #33302f;
+    font-weight: 500;
+
+}
