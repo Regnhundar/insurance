@@ -134,9 +134,13 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #333333;
+    color: #8d8d8d;
     font-weight: bold;
     font-size: 0.875rem;
+}
+
+nav .activeA {
+    color: #333333;
 }
 
 #mainSection {
