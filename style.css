@@ -6,6 +6,36 @@
     box-sizing: border-box;
 }
 
+h1,
+h2,
+h3 {
+    font-family: 'Frank Ruhl Libre', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    font-size: 3.75rem;
+    line-height: 80%;
+    font-weight: 700;
+}
+
+button {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    border: none;
+    font-weight: bold;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+button:hover {
+    transform: scale(1.02);
+}
+
+button:active {
+    transform: scale(1);
+}
+
 body {
     font-family: 'Fira Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #ebebeb;
@@ -44,18 +74,6 @@ header {
     padding: 3rem 5rem 5rem 5rem;
 }
 
-h1,
-h2,
-h3 {
-    font-family: 'Frank Ruhl Libre', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-h1 {
-    font-size: 3.75rem;
-    line-height: 80%;
-    font-weight: 700;
-}
-
 .leftHeroWrapper p {
     margin-top: 1rem;
     width: 19rem;
@@ -69,24 +87,6 @@ h1 {
 .leftHeroWrapper button {
     margin-top: auto;
     box-shadow: 0 0 1rem #00000037;
-}
-
-button {
-    width: 10rem;
-    height: 3rem;
-    border-radius: 1.5rem;
-    border: none;
-    font-weight: bold;
-    color: #333333;
-    background-color: #ffffff;
-}
-
-button:hover {
-    transform: scale(1.02);
-}
-
-button:active {
-    transform: scale(1);
 }
 
 .topRightHero,
@@ -116,7 +116,9 @@ button:active {
 
 .topRightHero p,
 .bottomRightHero p {
-    font-size: .75rem;
+    font-size: .875rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.479);
 }
 
 nav {
@@ -139,7 +141,7 @@ nav .activeA {
 }
 
 #mainSection {
-    background: linear-gradient(0deg, rgba(250, 177, 49, 1) 60%, rgba(169, 161, 158, 1) 60%);
+    background: linear-gradient(180deg, #a8a09e 45%, #fab030 45%);
     display: flex;
     flex-direction: column;
 }
@@ -184,34 +186,13 @@ main #peopleCardSection figure {
     position: relative;
 }
 
-main #peopleCardSection div {
+main #peopleCardSection figure div {
     height: 20vh;
     width: 17vw;
     border-radius: 6px;
     left: 5.4%;
     top: -8%;
     position: absolute;
-}
-
-main #peopleCardSection figure figcaption {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
-    height: 45vh;
-    padding: 2rem;
-}
-
-main #peopleCardSection figure figcaption p {
-    color: #999999;
-    text-align: center;
-    font-size: .75rem;
-    font-weight: bold;
-    line-height: 150%;
-}
-
-main #peopleCardSection figure figcaption h3 {
-    padding: 1rem;
 }
 
 main #peopleCardSection #childrenImg {
@@ -236,6 +217,27 @@ main #peopleCardSection #oldFartImg {
     background-repeat: no-repeat;
     background-size: 55%;
     background-position: center -10%;
+}
+
+main #peopleCardSection figure figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    height: 45vh;
+    padding: 2rem;
+}
+
+main #peopleCardSection figure figcaption h3 {
+    padding: 1rem;
+}
+
+main #peopleCardSection figure figcaption p {
+    color: #999999;
+    text-align: center;
+    font-size: .75rem;
+    font-weight: bold;
+    line-height: 150%;
 }
 
 main #aboutUs {
@@ -329,7 +331,6 @@ main #textCubeGrid .cubeFour h3 {
 main #textCubeGrid .cubeFour p {
     color: #482416;
 }
-
 
 main #textCubeGrid .cubeFive {
     background-color: #fff;
