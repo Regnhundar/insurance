@@ -11,7 +11,7 @@ body {
     background-color: #ebebeb;
 }
 
-.wrapper {
+#wrapper {
     margin: 0 10vw;
     max-width: 1134px;
 }
@@ -219,9 +219,8 @@ main #textCubeGrid .textCube {
     height: 378px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1px 1fr;
+    grid-template-rows: repeat(3, 1fr);
     padding: 1rem;
-
 }
 
 main #textCubeGrid .textCube h2 {
@@ -231,12 +230,16 @@ main #textCubeGrid .textCube h2 {
     line-height: 90%;
 }
 
+main #textCubeGrid .textCube #pWrapper,
 main #textCubeGrid .textCube p {
     color: #4d4d4d;
     font-weight: 500;
     font-size: 1.2rem;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
     align-self: center;
-    justify-self: center;
+    align-items: center;
 }
 
 main #textCubeGrid .textCube h3 {
