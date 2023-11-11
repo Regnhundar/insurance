@@ -130,4 +130,31 @@ body #wrapper #contactSection form #inputButton:active {
     transform: scale(1);
 }
 
-body #wrapper #mapSection {}
+body #wrapper #mapSection {
+    height: 55vh;
+    background-color: #343332;
+    padding: 3rem 0 0 6rem;
+}
+
+body #wrapper #mapSection article {
+    width: 25vw;
+    padding: 1.5rem 1.5rem 5.5rem 1.5rem;
+    background-color: #f4ad30;
+    display: flex;
+    flex-direction: column;
+}
+
+body #wrapper #mapSection article h2 {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+body #wrapper #mapSection article p {
+    color: #feefd5;
+}
+
+footer {
+    background-color: #71706f;
+    height: 45vh;
+}
