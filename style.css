@@ -24,9 +24,6 @@ header {
     grid-template-rows: repeat(4, 1fr);
 }
 
-
-
-
 .leftHero {
     display: flex;
     background-color: #c7ddea;
@@ -71,7 +68,7 @@ h1 {
 
 .leftHeroWrapper button {
     margin-top: auto;
-    box-shadow: 0 0 2rem #b3c7d3;
+    box-shadow: 0 0 1rem #00000037;
 }
 
 button {
@@ -82,16 +79,14 @@ button {
     font-weight: bold;
     color: #333333;
     background-color: #ffffff;
-
 }
 
 button:hover {
     transform: scale(1.02);
-
 }
 
 button:active {
-    transform: scale(.97)
+    transform: scale(1);
 }
 
 .topRightHero,
@@ -170,18 +165,78 @@ main #personalTxtArticle p {
 }
 
 main #personalTxtArticle button {
-    box-shadow: 0 0 2rem #98918e;
+    box-shadow: 0 0 1rem #00000037;
 }
 
 main #peopleCardSection {
     display: flex;
+    justify-content: center;
+    margin: 1rem;
 }
 
-main #peopleCardSection img {
-    height: 10vh;
-
+main #peopleCardSection figure {
+    background-color: white;
+    box-shadow: 0 0 1rem #00000037;
+    width: 19vw;
+    height: 45vh;
+    border-radius: 6px;
+    margin: 1rem;
+    position: relative;
 }
 
+main #peopleCardSection div {
+    height: 20vh;
+    width: 17vw;
+    border-radius: 6px;
+    left: 5.4%;
+    top: -8%;
+    position: absolute;
+}
+
+main #peopleCardSection figure figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    height: 45vh;
+    padding: 2rem;
+}
+
+main #peopleCardSection figure figcaption p {
+    color: #999999;
+    text-align: center;
+    font-size: .75rem;
+    font-weight: bold;
+    line-height: 150%;
+}
+
+main #peopleCardSection figure figcaption h3 {
+    padding: 1rem;
+}
+
+main #peopleCardSection #childrenImg {
+    background-color: #c7ddea;
+    background-image: url(assets/child.png);
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: center -140%;
+}
+
+main #peopleCardSection #justRightImg {
+    background-color: #fab131;
+    background-image: url(assets/adult.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center -3%;
+}
+
+main #peopleCardSection #oldFartImg {
+    background-color: #f17949;
+    background-image: url(assets/old.png);
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-position: center -10%;
+}
 
 main #aboutUs {
     display: flex;
@@ -195,7 +250,7 @@ main #aboutUs {
 
 main #aboutUs h2 {
     color: white;
-    margin: 14rem 4rem 4rem 4rem;
+    margin: 6rem 4rem 4rem 4rem;
     font-size: 3rem;
 }
 
@@ -206,8 +261,6 @@ main #aboutUs p {
     font-weight: 500;
     color: #644613;
 }
-
-
 
 main #textCubeGrid {
     display: grid;
