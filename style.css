@@ -276,6 +276,7 @@ main #textCubeGrid .textCube {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     padding: 1rem;
+    background-color: #fff
 }
 
 main #textCubeGrid .textCube h2 {
@@ -312,12 +313,8 @@ main #textCubeGrid .cubeHow {
     align-items: center;
 }
 
-main #textCubeGrid .cubeOne {
-    background-color: #fff;
-}
-
-main #textCubeGrid .cubeThree {
-    background-color: #fff;
+main #textCubeGrid .cubeTwo {
+    background-color: #ebebeb;
 }
 
 main #textCubeGrid .cubeFour {
@@ -330,10 +327,6 @@ main #textCubeGrid .cubeFour h3 {
 
 main #textCubeGrid .cubeFour p {
     color: #482416;
-}
-
-main #textCubeGrid .cubeFive {
-    background-color: #fff;
 }
 
 footer {
@@ -360,5 +353,4 @@ footer nav a {
     font-size: 1.2rem;
     color: #33302f;
     font-weight: 500;
-
 }
